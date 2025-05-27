@@ -19,7 +19,7 @@ const VideoBackground = () => {
         muted
         playsInline
       >
-        <source src={videos[1].path} typeof={videos[1].type} />
+        <source src="/videos/grass-short.mp4" />
       </video>
 
       <div className="absolute top-0 left-0 w-full h-full bg-stone-800/60 backdrop-saturate-50 -z-1"></div>
