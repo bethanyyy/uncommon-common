@@ -17,6 +17,6 @@
 @layer base {
   body {
     scroll-behavior: smooth;
-    @apply bg-primary text-white leading-loose;
+    @apply bg-white text-white leading-loose;
   }
 }

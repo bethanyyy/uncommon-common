@@ -87,7 +87,7 @@ const Products = () => {
 
           {/* right section */}
           <div className="relative col-span-2 flex flex-col gap-4 w-full h-full">
-            <h1 className="text-xl">{products[index].name}</h1>
+            <h1 className="text-primary text-xl">{products[index].name}</h1>
             <ProductGallery products={products[index].gallery} />
           </div>
         </motion.div>
@@ -100,8 +100,8 @@ const Products = () => {
             onClick={() => setIndex(i)}
             className={`${
               i === index
-                ? "border-1 border-white"
-                : "border-1 border-white/0 hover:border-1 hover:border-white/100 hover:cursor-pointer"
+                ? "border-1 border-primary"
+                : "border-1 border-primary/0 hover:border-1 hover:border-primary/100 hover:cursor-pointer"
             } w-12 h-12 rounded-full transition-all duration-300 relative overflow-hidden`}
           >
             <Image
