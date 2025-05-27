@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-primary: #1c1c22;
+  --color-accent: #00ff99;
+  --color-accent-hover: #7b5431;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
+}
+
+@layer base {
+  body {
+    scroll-behavior: smooth;
+    @apply bg-primary text-white leading-loose;
+  }
+}
