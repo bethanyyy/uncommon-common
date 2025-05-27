@@ -6,7 +6,7 @@ import ProductGallery from "@/components/ProductGallery";
 import { AnimatePresence, motion } from "framer-motion";
 
 const videos = [
-  { path: "/videos/C0139.MP4", type: "video/mp4" },
+  { path: "/videos/guihua-short.mp4", type: "video/mp4" },
   { path: "/videos/C00962.MP4", type: "video/mp4" },
   { path: "/videos/IMG_2911.MOV", type: "video/mov" },
 ];
@@ -23,7 +23,7 @@ const products_gallery = [
 const products = [
   {
     name: "SCENT 1 青麟隋",
-    video: "/videos/C0139.MP4",
+    video: "/videos/guihua-short.mp4",
     thumbnail: "/videos/t1.png",
     gallery: [
       { path: "/products/p1.jpg" },
@@ -34,7 +34,7 @@ const products = [
   },
   {
     name: "SCENT 2 鹅梨帐中香",
-    video: "/videos/C00962.MP4",
+    video: "/videos/grass-short.mp4",
     thumbnail: "/videos/t2.png",
     gallery: [
       { path: "/products/p5.jpg" },
