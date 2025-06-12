@@ -4,26 +4,23 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Nav from "./Nav";
 
 const Header = () => {
   const pathname = usePathname();
 
   return (
-    <div>
-      <Link
-        href={"/"}
-        className={`${
-          pathname === "/" && "hidden"
-        } absolute top-6 left-6 text-white z-10`}
-      >
+    <div className="px-4 mx-auto flex justify-between items-center fixed left-4 top-4 z-10">
+      <Link href={"/"} className={`${pathname === "/" && "hidden"}`}>
         <Image
-          src={"/logo-whitebg.jpg"}
+          src={"/logo-sm-red.svg"}
           alt="logo"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           className="object-contain"
         />
       </Link>
+      <Nav />
     </div>
   );
 };

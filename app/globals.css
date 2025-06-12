@@ -5,8 +5,10 @@
 
 @theme inline {
   --color-primary: #1c1c22;
-  --color-accent: #00ff99;
+  --color-accent: #efe1c0;
   --color-accent-hover: #7b5431;
+
+  --font-accent: var(--font-yesevaOne);
 
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;

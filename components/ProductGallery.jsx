@@ -5,12 +5,23 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
-const ProductGallery = ({ products }) => {
+const ProductGallery = ({ productImages }) => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="relative flex flex-col w-full h-full gap-4 ">
-      <div className="relative flex-1">
+    <div className="relative w-full h-full overflow-y-auto flex flex-col gap-4">
+      {productImages.map((_, i) => (
+        <Image
+          key={i}
+          src={productImages[i]}
+          alt="product image"
+          width={700}
+          height={700}
+          className="object-contain"
+          priority
+        />
+      ))}
+      {/* <div className="relative flex-1">
         <AnimatePresence mode="wait">
           <motion.div
             key={products[index].path}
@@ -24,7 +35,7 @@ const ProductGallery = ({ products }) => {
               src={products[index].path}
               alt="product image"
               fill={true}
-              className="object-cover rounded-[2rem]"
+              className="object-contain rounded-[2rem]"
               priority
             />
           </motion.div>
@@ -43,7 +54,7 @@ const ProductGallery = ({ products }) => {
             } w-2 h-2 rounded-full transition-all duration-300`}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
