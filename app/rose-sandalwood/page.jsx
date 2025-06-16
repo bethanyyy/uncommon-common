@@ -108,6 +108,9 @@ const RoseSandalwood = () => {
         />
       </div>
 
+      {/* background mask */}
+      <div className="fixed top-0 left-0 w-full h-full bg-accent-hover/20 backdrop-saturate-100 -z-1"></div>
+
       {/* vertical progress bar */}
       {/* <div className="absolute h-full top-0 right-8 flex flex-col justify-center gap-4">
         {products.map((_, i) => (
