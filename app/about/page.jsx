@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="text-primary text-2xl container m-auto flex flex-col gap-4 py-4 items-center justify-center w-full h-screen">
+    <div className="container text-primary text-2xl flex flex-col gap-4 py-4 lg:justify-center w-full h-screen">
       <p>
         Uncommon Common is a contemporary jewelry brand rooted in the timeless
         traditions of Chinese intangible cultural heritage, reimagining incense

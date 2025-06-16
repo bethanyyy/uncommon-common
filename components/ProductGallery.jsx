@@ -9,7 +9,7 @@ const ProductGallery = ({ productImages }) => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="relative w-full h-full overflow-y-auto flex flex-col gap-4">
+    <div className="relative w-full h-full sm:overflow-y-auto flex flex-col gap-4">
       {productImages.map((_, i) => (
         <Image
           key={i}

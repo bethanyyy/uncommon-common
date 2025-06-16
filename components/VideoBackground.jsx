@@ -38,7 +38,7 @@ const contactPos = 0;
 
 const VideoBackground = () => {
   return (
-    <div className="min-h-screen w-screen flex flex-col items-center justify-center overflow-hidden p-8 gap-8 xl:px-40 px-32">
+    <div className="min-h-screen w-screen flex flex-col items-center justify-center overflow-hidden p-8 gap-8 px-16 md:px-32 xl:px-40 ">
       <video
         className="fixed top-0 left-0 w-full h-full object-cover -z-2"
         autoPlay

@@ -22,3 +22,8 @@
     @apply bg-white text-white leading-loose;
   }
 }
+
+@utility container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+}

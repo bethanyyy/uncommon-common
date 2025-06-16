@@ -66,7 +66,7 @@ const RoseSandalwood = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-screen p-10">
+    <div className="h-screen w-full p-4 sm:p-10">
       <AnimatePresence mode="wait">
         <motion.div
           key={products[index].video}
@@ -74,7 +74,7 @@ const RoseSandalwood = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 h-full gap-0"
+          className=" sm:grid sm:grid-cols-2 h-full gap-0"
         >
           {/* left section */}
           <div className="relative w-full h-full">
