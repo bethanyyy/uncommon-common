@@ -13,19 +13,22 @@ const videos = [
 const products = [
   {
     name: "Rose Sandalwood",
-    thumbnail: "/rose-sandalwood.svg",
+    thumbnail:
+      "https://res.cloudinary.com/uncommon-common/image/upload/v1750095771/scent-thumbnails/rose-sandalwood_j9on9c.png",
     link: "/rose-sandalwood",
     gridPos: 1,
   },
   {
     name: "Pear and Tea",
-    thumbnail: "/pear-tea.svg",
+    thumbnail:
+      "https://res.cloudinary.com/uncommon-common/image/upload/v1750095770/scent-thumbnails/pear-tea_mj3yfp.png",
     link: "/pear-tea",
     gridPos: 4,
   },
   {
     name: "Coffee Osmanthus",
-    thumbnail: "/coffee-osmanthus.svg",
+    thumbnail:
+      "https://res.cloudinary.com/uncommon-common/image/upload/v1750095769/scent-thumbnails/coffee-osmanthus_pwqc5m.png",
     link: "/coffee-osmanthus",
     gridPos: 10,
   },
