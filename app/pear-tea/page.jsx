@@ -92,17 +92,16 @@ const PearTea = () => {
           </div>
 
           {/* right section */}
-          {/* <div className=""> */}
-          {/* <h1 className="text-primary text-xl">{products[index].name}</h1> */}
           <ProductGallery productImages={images} />
-          {/* </div> */}
         </motion.div>
       </AnimatePresence>
 
       {/* background image */}
       <div className="fixed inset-0 -z-2">
         <Image
-          src={"/pear-bg1.jpg"}
+          src={
+            "https://res.cloudinary.com/uncommon-common/image/upload/q_auto/f_auto/v1750096225/product-bgs/pear-bg1_foncan.jpg"
+          }
           alt="logo"
           fill
           className="object-cover "

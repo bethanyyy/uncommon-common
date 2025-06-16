@@ -92,17 +92,16 @@ const CoffeeOsmanthus = () => {
           </div>
 
           {/* right section */}
-          {/* <div className=""> */}
-          {/* <h1 className="text-primary text-xl">{products[index].name}</h1> */}
           <ProductGallery productImages={images} />
-          {/* </div> */}
         </motion.div>
       </AnimatePresence>
 
       {/* background image */}
       <div className="fixed inset-0 -z-2">
         <Image
-          src={"/coffee-bg1.jpg"}
+          src={
+            "https://res.cloudinary.com/uncommon-common/image/upload/q_auto/f_auto/v1750096223/product-bgs/coffee-bg1_kwqfcu.jpg"
+          }
           alt="logo"
           fill
           className="object-cover "
