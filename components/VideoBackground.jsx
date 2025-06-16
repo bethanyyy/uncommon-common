@@ -46,7 +46,7 @@ const VideoBackground = () => {
         muted
         playsInline
       >
-        <source src="https://res.cloudinary.com/uncommon-common/video/upload/q_auto/f_auto/v1750093062/grass-short_blipbs.mp4" />
+        <source src="https://res.cloudinary.com/uncommon-common/video/upload/q_auto/f_auto/v1750102755/home_tr86qw.mp4" />
       </video>
 
       <div className="fixed top-0 left-0 w-full h-full bg-accent-hover/30 backdrop-saturate-100 -z-1"></div>

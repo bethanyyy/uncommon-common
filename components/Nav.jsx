@@ -31,7 +31,7 @@ const Nav = () => {
         <Link
           href={link.path}
           key={index}
-          className="bg-white border border-primary text-primary text-sm uppercase px-4 py-2 transition-all"
+          className="bg-white/80 border border-primary text-primary text-sm uppercase px-4 py-2 transition-all"
         >
           {link.name}
         </Link>
