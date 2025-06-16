@@ -11,7 +11,7 @@ const videos = [
   { path: "/videos/IMG_2911.MOV", type: "video/mov" },
 ];
 
-const imageCount = 16;
+const imageCount = 15;
 const images = Array.from(
   { length: imageCount },
   (_, i) => `/products/pear-tea/${i + 1}.png`
@@ -74,7 +74,7 @@ const PearTea = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 h-full gap-10"
+          className="grid grid-cols-2 h-full gap-0"
         >
           {/* left section */}
           <div className="relative w-full h-full">
@@ -86,7 +86,7 @@ const PearTea = () => {
                 muted
                 playsInline
               >
-                <source src={products[index].video} />
+                <source src="https://res.cloudinary.com/uncommon-common/video/upload/q_auto/f_auto/v1750090262/pear-tea_a4ewxk.mp4" />
               </video>
             </div>
           </div>

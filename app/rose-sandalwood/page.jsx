@@ -74,7 +74,7 @@ const RoseSandalwood = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 h-full gap-10"
+          className="grid grid-cols-2 h-full gap-0"
         >
           {/* left section */}
           <div className="relative w-full h-full">
@@ -86,7 +86,7 @@ const RoseSandalwood = () => {
                 muted
                 playsInline
               >
-                <source src={products[index].video} />
+                <source src="https://res.cloudinary.com/uncommon-common/video/upload/q_auto/f_auto/v1750090173/rose-sandalwood_di0amt.mp4" />
               </video>
             </div>
           </div>

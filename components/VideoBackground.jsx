@@ -35,7 +35,7 @@ const contactPos = 0;
 
 const VideoBackground = () => {
   return (
-    <div className="min-h-screen w-screen flex flex-col items-center justify-center overflow-hidden p-8 gap-8 px-40">
+    <div className="min-h-screen w-screen flex flex-col items-center justify-center overflow-hidden p-8 gap-8 xl:px-40 px-32">
       <video
         className="fixed top-0 left-0 w-full h-full object-cover -z-2"
         autoPlay
@@ -43,7 +43,7 @@ const VideoBackground = () => {
         muted
         playsInline
       >
-        <source src="/videos/grass-short.mp4" />
+        <source src="https://res.cloudinary.com/uncommon-common/video/upload/q_auto/f_auto/v1750093062/grass-short_blipbs.mp4" />
       </video>
 
       <div className="fixed top-0 left-0 w-full h-full bg-accent-hover/30 backdrop-saturate-100 -z-1"></div>
@@ -60,7 +60,7 @@ const VideoBackground = () => {
       </div>
 
       {/* grid */}
-      <div className="w-full h-full grid grid-cols-4 gap-10">
+      <div className="w-full h-full grid sm:grid-cols-2 lg:grid-cols-4 gap-10 ">
         {Array.from({ length: 20 }).map((_, i) => {
           const matchingProduct = products.find((p) => p.gridPos === i);
           const matchingContactBox = contactPos === i;
@@ -93,18 +93,6 @@ const VideoBackground = () => {
           );
         })}
       </div>
-
-      {/* old start exporing */}
-      {/* <div className="group row-start-3 flex">
-        <Link href={"/products"}>
-          <div className="flex items-center justify-center">
-            <Button>start exploring</Button>
-            <span className="transform transition-all duration-300 opacity-0 font-medium translate-x-[-10px] group-hover:translate-x-[-8px] group-hover:opacity-100">
-              →
-            </span>
-          </div>
-        </Link>
-      </div> */}
     </div>
   );
 };

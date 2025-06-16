@@ -74,7 +74,7 @@ const CoffeeOsmanthus = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 h-full gap-10"
+          className="grid grid-cols-2 h-full gap-0"
         >
           {/* left section */}
           <div className="relative w-full h-full">
@@ -86,7 +86,7 @@ const CoffeeOsmanthus = () => {
                 muted
                 playsInline
               >
-                <source src={products[index].video} />
+                <source src="https://res.cloudinary.com/uncommon-common/video/upload/q_auto/f_auto/v1750090254/coffee-osmanthus_knug36.mp4" />
               </video>
             </div>
           </div>
