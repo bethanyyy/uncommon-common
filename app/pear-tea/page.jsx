@@ -16,6 +16,7 @@ const images = Array.from(
   { length: imageCount },
   (_, i) => `/products/pear-tea/${i + 1}.png`
 );
+// images[0] = "/products/test-product.jpg";
 
 const products_gallery = [
   { path: "/products/p1.jpg" },
@@ -80,7 +81,7 @@ const PearTea = () => {
           <div className="relative w-full h-full">
             <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
               <video
-                className="w-full h-full object-contain "
+                className="w-full h-full object-contain"
                 autoPlay
                 loop
                 muted
